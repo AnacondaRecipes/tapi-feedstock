@@ -1,5 +1,6 @@
 {% set name = "tapi" %}
 {% set version = "1000.10.8" %}
+{% set cxx_compiler_version = "*" %}
 
 package:
   name: {{ name|lower }}
@@ -25,7 +26,7 @@ source:
     sha256: b91b4cb52ca7f174381fb8142d1b64608e840980238b859de36476869eea9430   # [linux]
 
 build:
-  number: 4
+  number: 0
   skip: True  # [win]
 
 requirements:
