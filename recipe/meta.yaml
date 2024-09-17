@@ -10,7 +10,7 @@ source:
     sha256: 673ab783a1b14613abc58dca5bf3fcb05f0ddabd35c587c949661f8c499b8523
 
 build:
-  number: 2
+  number: 1
   skip: True  # [win or (linux and s390x)]
 
 requirements:
@@ -31,17 +31,17 @@ test:
     - test -f $PREFIX/include/tapi/tapi.h
 
 about:
-  home: https://github.com/tpoechtrager/apple-libtapi
+  home: https://opensource.apple.com/source/tapi
   license: NCSA
   license_family: MIT
   license_file:
     - LICENSE.APPLE-LIBTAPI.txt
     - LICENSE.LLVM.txt
-  summary: TAPI is a Text-based Application Programming Interface
-  description: TAPI is a Text-based Application Programming Interface
-  doc_url: https://github.com/tpoechtrager/apple-libtapi
-  dev_url: https://github.com/tpoechtrager/apple-libtapi
+  summary: 'TAPI is a Text-based Application Programming Interface'
+  doc_url: https://opensource.apple.com/source/tapi/tapi-{{ version }}/Readme.md
+  dev_url: https://github.com/ributzka/tapi
 
 extra:
-  skip-lints:
-    - host_section_needs_exact_pinnings
+  recipe-maintainers:
+    - isuruf
+    - katietz
