@@ -3,4 +3,4 @@ upstream_sources:
   - github:
       identifier: apple-oss-distributions/tapi
       use_max_tag: true
-      strip_prefix: tapi-
+      prefix: tapi-
